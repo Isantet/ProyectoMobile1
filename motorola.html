@@ -1,100 +1,53 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8""")/>>
-<meta name="viewport" content="width=device-width,initial-scale=1.0""")/>>
-<title>Motorola – HULK CELL</title>
-<link rel="preconnect" href="https://fonts.googleapis.com""")/>>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet""")/>>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css""")/>>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css""")/>>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-<style>
-/* USANDO TUS MISMOS ESTILOS PARA QUE SEA IDÉNTICA */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:#0D0D0D;color:#E8E8E8;font-family:'DM Sans',sans-serif;overflow-x:hidden}
-::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:#111}::-webkit-scrollbar-thumb{background:#4CAF50;border-radius:2px}
-#main-header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(13,13,13,.95);backdrop-filter:blur(14px);border-bottom:1px solid rgba(76,175,80,.15);transition:all .3s}
-.marquee-wrap{overflow:hidden;background:#4CAF50}
-.marquee-track{display:flex;gap:2rem;animation:marquee 22s linear infinite;white-space:nowrap;padding:6px 0}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.btn-wa{background:#25D366;color:#fff;border-radius:8px;display:flex;align-items:center;gap:6px;font-size:.8rem;font-weight:600;padding:7px 13px;white-space:nowrap;transition:transform .15s,box-shadow .15s;text-decoration:none}
-.inv-table{width:100%;border-collapse:collapse}
-.inv-table thead tr{background:#161616;border-bottom:2px solid #4CAF50}
-.inv-table thead th{padding:12px 16px;font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#4CAF50;text-align:left}
-.inv-table tbody tr:nth-child(even){background:#0F0F0F}
-.inv-table tbody tr:nth-child(odd){background:#141414}
-.inv-table tbody tr{border-bottom:1px solid #1E1E1E}
-.inv-table tbody td{padding:12px 16px;font-size:.85rem;color:#C8C8C8}
-.pc{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;color:#4CAF50}
-.bn{background:#4CAF50;color:#000;font-family:'Barlow Condensed',sans-serif;font-size:.65rem;font-weight:700;padding:2px 8px;border-radius:4px}
-</style>
-</head>
-
-<body>
-<header id="main-header">
-  <div class="marquee-wrap"><div class="marquee-track text-xs font-semibold text-black">
-    <span>📦 Envíos a todo el país &nbsp;•&nbsp;</span><span>✅ Garantía oficial &nbsp;•&nbsp;</span><span>📱 Motorola Edge 50 &nbsp;•&nbsp;</span><span>🔥 Calidad Premium &nbsp;•&nbsp;</span>
-  </div></div>
-  <nav class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-    <a href="index.html" class="font-black text-xl text-green-500">HULK CELL</a>
-    <div class="flex gap-4">
-        <a href="https://wa.me" class="btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        <a href="index.html" class="text-xs uppercase font-bold text-gray-500 pt-2 hover:text-white transition">Volver</a>
+<!-- Sección de Productos Motorola -->
+<section id="motorola-products" class="py-5" style="background-color: #0F0F0F;">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 style="color: #4CAF50; font-weight: 700; text-transform: uppercase;">Motorola Series</h2>
+      <p style="color: #888;">Innovación y rendimiento al mejor precio.</p>
     </div>
-  </nav>
-</header>
 
-<main style="padding-top:120px">
-  <!-- HERO MOTOROLA -->
-  <section class="max-w-7xl mx-auto px-4 mb-12">
-    <div class="relative rounded-3xl overflow-hidden h-80 flex items-center px-12 border border-gray-800">
-      <img src="https://unsplash.com" class="absolute inset-0 w-full h-full object-cover opacity-30" alt="Motorola">
-      <div class="relative z-10">
-        <h1 class="text-6xl font-black italic text-white leading-none">MOTOROLA</h1>
-        <p class="text-green-500 font-bold mt-2 uppercase tracking-widest">Tecnología Inteligente</p>
+    <div class="row g-4">
+      <!-- Tarjeta: Moto Edge 40 -->
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card h-100" style="background: #1A1A1A; border: 1px solid #333; border-radius: 15px; overflow: hidden;">
+          <div style="padding: 20px; text-align: center;">
+            <img src="img/moto-edge-40.png" alt="Moto Edge 40" class="img-fluid" style="max-height: 200px; transition: transform .3s ease;">
+          </div>
+          <div class="card-body text-center pt-0">
+            <h5 style="color: #E8E8E8; font-size: 1rem; font-weight: 600;">Moto Edge 40</h5>
+            <p style="color: #4CAF50; font-weight: 700; font-size: 1.1rem; margin-bottom: 15px;">US$ 449</p>
+            <a href="https://wa.me" class="btn btn-sm" style="background: #4CAF50; color: white; border-radius: 20px; padding: 6px 18px; font-weight: 600;">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta: Moto G84 -->
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100" style="background: #1A1A1A; border: 1px solid #333; border-radius: 15px; overflow: hidden;">
+          <div style="padding: 20px; text-align: center;">
+            <img src="img/moto-g84.png" alt="Moto G84" class="img-fluid" style="max-height: 200px;">
+          </div>
+          <div class="card-body text-center pt-0">
+            <h5 style="color: #E8E8E8; font-size: 1rem; font-weight: 600;">Moto G84 5G</h5>
+            <p style="color: #4CAF50; font-weight: 700; font-size: 1.1rem; margin-bottom: 15px;">US$ 285</p>
+            <a href="https://wa.me" class="btn btn-sm" style="background: #4CAF50; color: white; border-radius: 20px; padding: 6px 18px; font-weight: 600;">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta: Moto Razr 40 Ultra -->
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card h-100" style="background: #1A1A1A; border: 1px solid #333; border-radius: 15px; overflow: hidden;">
+          <div style="padding: 20px; text-align: center;">
+            <img src="img/moto-razr.png" alt="Moto Razr 40 Ultra" class="img-fluid" style="max-height: 200px;">
+          </div>
+          <div class="card-body text-center pt-0">
+            <h5 style="color: #E8E8E8; font-size: 1rem; font-weight: 600;">Razr 40 Ultra</h5>
+            <p style="color: #4CAF50; font-weight: 700; font-size: 1.1rem; margin-bottom: 15px;">US$ 899</p>
+            <a href="https://wa.me" class="btn btn-sm" style="background: #4CAF50; color: white; border-radius: 20px; padding: 6px 18px; font-weight: 600;">Comprar</a>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-
-  <!-- TABLA DE MOTOROLA -->
-  <section class="max-w-7xl mx-auto px-4 mb-20">
-    <div class="flex justify-between items-end mb-6">
-        <h2 class="text-3xl font-bold tracking-tighter italic">MODELOS DISPONIBLES</h2>
-    </div>
-    
-    <div class="overflow-hidden border border-gray-800 rounded-xl shadow-2xl">
-      <table class="inv-table">
-        <thead>
-          <tr>
-            <th>MODELO</th>
-            <th>CAPACIDAD</th>
-            <th>ESTADO</th>
-            <th style="text-align:right">PRECIO (RD$)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Motorola Edge 50 Pro</td>
-            <td>512GB</td>
-            <td><span class="bn">NUEVO</span></td>
-            <td style="text-align:right" class="pc">32,500</td>
-          </tr>
-          <tr>
-            <td>Motorola G84 5G</td>
-            <td>256GB</td>
-            <td><span class="bn">NUEVO</span></td>
-            <td style="text-align:right" class="pc">13,900</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-</main>
-
-<script>AOS.init();</script>
-</body>
-</html>
+  </div>
+</section>
