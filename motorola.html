@@ -1,89 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motorola - HULK CELL</title>
-    <!-- Esto es lo que faltaba: La conexión al diseño -->
-    <script src="https://tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cloudflare.com">
-    <style>
-        body { background-color: #0a0a0a; color: #e8e8e8; }
-        .hulk-border { border-color: #4CAF50; }
-        .hulk-text { color: #4CAF50; }
-    </style>
+<meta charset="UTF-8""")/>>
+<meta name="viewport" content="width=device-width,initial-scale=1.0""")/>>
+<title>Motorola – HULK CELL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com""")/>>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet""")/>>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css""")/>>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css""")/>>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<style>
+/* USANDO TUS MISMOS ESTILOS PARA QUE SEA IDÉNTICA */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#0D0D0D;color:#E8E8E8;font-family:'DM Sans',sans-serif;overflow-x:hidden}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:#111}::-webkit-scrollbar-thumb{background:#4CAF50;border-radius:2px}
+#main-header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(13,13,13,.95);backdrop-filter:blur(14px);border-bottom:1px solid rgba(76,175,80,.15);transition:all .3s}
+.marquee-wrap{overflow:hidden;background:#4CAF50}
+.marquee-track{display:flex;gap:2rem;animation:marquee 22s linear infinite;white-space:nowrap;padding:6px 0}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.btn-wa{background:#25D366;color:#fff;border-radius:8px;display:flex;align-items:center;gap:6px;font-size:.8rem;font-weight:600;padding:7px 13px;white-space:nowrap;transition:transform .15s,box-shadow .15s;text-decoration:none}
+.inv-table{width:100%;border-collapse:collapse}
+.inv-table thead tr{background:#161616;border-bottom:2px solid #4CAF50}
+.inv-table thead th{padding:12px 16px;font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#4CAF50;text-align:left}
+.inv-table tbody tr:nth-child(even){background:#0F0F0F}
+.inv-table tbody tr:nth-child(odd){background:#141414}
+.inv-table tbody tr{border-bottom:1px solid #1E1E1E}
+.inv-table tbody td{padding:12px 16px;font-size:.85rem;color:#C8C8C8}
+.pc{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;color:#4CAF50}
+.bn{background:#4CAF50;color:#000;font-family:'Barlow Condensed',sans-serif;font-size:.65rem;font-weight:700;padding:2px 8px;border-radius:4px}
+</style>
 </head>
+
 <body>
-
-    <!-- Header -->
-    <nav class="bg-black/90 p-5 border-b hulk-border/30 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-black hulk-text tracking-tighter">HULK CELL</a>
-            <a href="index.html" class="text-sm font-bold hover:hulk-text transition uppercase tracking-widest">
-                <i class="fas fa-chevron-left mr-2"></i> Volver al Inicio
-            </a>
-        </div>
-    </nav>
-
-    <!-- Hero Banner -->
-    <div class="relative h-80 w-full">
-        <img src="https://unsplash.com" 
-             alt="Motorola" class="w-full h-full object-cover opacity-40">
-        <div class="absolute inset-0 flex flex-col items-center justify-center">
-            <h1 class="text-6xl font-black italic tracking-tighter uppercase">MOTOROLA</h1>
-            <div class="h-1 w-24 bg-green-500 mt-2"></div>
-        </div>
+<header id="main-header">
+  <div class="marquee-wrap"><div class="marquee-track text-xs font-semibold text-black">
+    <span>📦 Envíos a todo el país &nbsp;•&nbsp;</span><span>✅ Garantía oficial &nbsp;•&nbsp;</span><span>📱 Motorola Edge 50 &nbsp;•&nbsp;</span><span>🔥 Calidad Premium &nbsp;•&nbsp;</span>
+  </div></div>
+  <nav class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+    <a href="index.html" class="font-black text-xl text-green-500">HULK CELL</a>
+    <div class="flex gap-4">
+        <a href="https://wa.me" class="btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="index.html" class="text-xs uppercase font-bold text-gray-500 pt-2 hover:text-white transition">Volver</a>
     </div>
+  </nav>
+</header>
 
-    <!-- Lista de Inventario -->
-    <div class="max-w-5xl mx-auto px-4 py-12">
-        <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden shadow-2xl">
-            <div class="p-6 border-b border-gray-800 flex justify-between items-center bg-gray-800/30">
-                <h2 class="text-xl font-bold tracking-tight">INVENTARIO DISPONIBLE</h2>
-                <span class="text-xs font-bold text-green-500 bg-green-500/10 px-3 py-1 rounded-full">DOMINICANA</span>
-            </div>
-
-            <div class="overflow-x-auto">
-                <table class="w-full">
-                    <thead>
-                        <tr class="text-left text-gray-500 text-xs uppercase tracking-widest border-b border-gray-800">
-                            <th class="p-5">Modelo</th>
-                            <th class="p-5">Capacidad</th>
-                            <th class="p-5">Estado</th>
-                            <th class="p-5 text-right">Precio RD$</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-800">
-                        <tr class="hover:bg-green-500/5 transition group">
-                            <td class="p-5 font-bold group-hover:hulk-text">Motorola Edge 50 Pro</td>
-                            <td class="p-5 text-gray-400">512GB</td>
-                            <td class="p-5"><span class="bg-green-900/30 text-green-400 text-[10px] font-bold px-2 py-1 rounded">NUEVO</span></td>
-                            <td class="p-5 text-right font-black text-xl">RD$ 32,500</td>
-                        </tr>
-                        <tr class="hover:bg-green-500/5 transition group">
-                            <td class="p-5 font-bold group-hover:hulk-text">Motorola Moto G84 5G</td>
-                            <td class="p-5 text-gray-400">256GB</td>
-                            <td class="p-5"><span class="bg-green-900/30 text-green-400 text-[10px] font-bold px-2 py-1 rounded">NUEVO</span></td>
-                            <td class="p-5 text-right font-black text-xl">RD$ 13,900</td>
-                        </tr>
-                        <tr class="hover:bg-green-500/5 transition group">
-                            <td class="p-5 font-bold group-hover:hulk-text">Motorola Razr 40 Ultra</td>
-                            <td class="p-5 text-gray-400">256GB</td>
-                            <td class="p-5"><span class="bg-blue-900/30 text-blue-400 text-[10px] font-bold px-2 py-1 rounded">OPEN BOX</span></td>
-                            <td class="p-5 text-right font-black text-xl">RD$ 41,000</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <!-- Botón WhatsApp -->
-        <div class="mt-12 text-center">
-            <a href="https://wa.me" class="inline-flex items-center bg-green-600 hover:bg-green-500 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-xl shadow-green-900/20">
-                <i class="fab fa-whatsapp mr-3 text-2xl"></i> ORDENAR POR WHATSAPP
-            </a>
-        </div>
+<main style="padding-top:120px">
+  <!-- HERO MOTOROLA -->
+  <section class="max-w-7xl mx-auto px-4 mb-12">
+    <div class="relative rounded-3xl overflow-hidden h-80 flex items-center px-12 border border-gray-800">
+      <img src="https://unsplash.com" class="absolute inset-0 w-full h-full object-cover opacity-30" alt="Motorola">
+      <div class="relative z-10">
+        <h1 class="text-6xl font-black italic text-white leading-none">MOTOROLA</h1>
+        <p class="text-green-500 font-bold mt-2 uppercase tracking-widest">Tecnología Inteligente</p>
+      </div>
     </div>
+  </section>
 
+  <!-- TABLA DE MOTOROLA -->
+  <section class="max-w-7xl mx-auto px-4 mb-20">
+    <div class="flex justify-between items-end mb-6">
+        <h2 class="text-3xl font-bold tracking-tighter italic">MODELOS DISPONIBLES</h2>
+    </div>
+    
+    <div class="overflow-hidden border border-gray-800 rounded-xl shadow-2xl">
+      <table class="inv-table">
+        <thead>
+          <tr>
+            <th>MODELO</th>
+            <th>CAPACIDAD</th>
+            <th>ESTADO</th>
+            <th style="text-align:right">PRECIO (RD$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Motorola Edge 50 Pro</td>
+            <td>512GB</td>
+            <td><span class="bn">NUEVO</span></td>
+            <td style="text-align:right" class="pc">32,500</td>
+          </tr>
+          <tr>
+            <td>Motorola G84 5G</td>
+            <td>256GB</td>
+            <td><span class="bn">NUEVO</span></td>
+            <td style="text-align:right" class="pc">13,900</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script>AOS.init();</script>
 </body>
 </html>
