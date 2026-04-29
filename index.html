@@ -490,7 +490,13 @@ footer{background:#080808;border-top:1px solid #1A1A1A}
             <label style="display:block;color:#9E9E9E;font-size:.75rem;font-weight:600;margin-bottom:8px">Consulta o Modelo de interés</label>
             <textarea rows="4" required placeholder="Indica el modelo que buscas..." style="width:100%;background:#1A1A1A;border:1px solid #2C2C2C;border-radius:8px;padding:12px 16px;color:#fff;font-size:.85rem;outline:none;resize:vertical;transition:border-color .2s" onfocus="this.style.borderColor='#4CAF50'" onblur="this.style.borderColor='#2C2C2C'"></textarea>
           </div>
-          <button type="button" onclick="alert('¡Mensaje enviado con éxito! Nos comunicaremos pronto.')" style="width:100%;background:#4CAF50;color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:.05em;border:none;border-radius:8px;padding:14px;cursor:pointer;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 25px rgba(76,175,80,0.3)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">ENVIAR MENSAJE</button>
+          <button type="button" onclick="enviarWhatsApp()" style="width:100%;background:#4CAF50;color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:.05em;border:none;border-radius:8px;padding:14px;cursor:pointer;transition:transform .2s,box-shadow .2s;display:flex;align-items:center;justify-content:center;gap:8px" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 25px rgba(76,175,80,0.3)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+  <i class="fab fa-whatsapp" style="font-size:1.2rem"></i> ENVIAR POR WHATSAPP
+</button>
+<div id="form-success" style="display:none;margin-top:16px;background:rgba(76,175,80,0.1);border:1px solid rgba(76,175,80,0.3);border-radius:8px;padding:14px;text-align:center">
+  <i class="fas fa-check-circle" style="color:#4CAF50;margin-right:6px"></i>
+  <span style="color:#4CAF50;font-size:.85rem;font-weight:600">¡Redirigiendo a WhatsApp!</span>
+</div>
         </form>
       </div>
     </div>
@@ -565,4 +571,33 @@ document.addEventListener('DOMContentLoaded',function(){
 });
 </script>
 <script src="search.js"></script>
-</body></html>
+  <script>
+function enviarWhatsApp() {
+  var nombre   = document.querySelector('#contacto input[placeholder="Ej. Carlos Mendoza"]');
+  var contacto = document.querySelector('#contacto input[placeholder="Para contactarte"]');
+  var consulta = document.querySelector('#contacto textarea');
+
+  if (!nombre.value.trim() || !contacto.value.trim() || !consulta.value.trim()) {
+    [nombre, contacto, consulta].forEach(function(f) {
+      if (!f.value.trim()) {
+        f.style.borderColor = '#E53935';
+        f.addEventListener('input', function() { f.style.borderColor = '#4CAF50'; }, { once: true });
+      }
+    });
+    return;
+  }
+
+  var mensaje =
+    '👋 Hola Hulk Cell, me contacto desde su página web.\n\n' +
+    '📌 *Nombre:* ' + nombre.value.trim() + '\n' +
+    '📞 *Contacto:* ' + contacto.value.trim() + '\n' +
+    '📱 *Consulta:* ' + consulta.value.trim();
+
+  var numero = '18293715732'; // ← cambia por el número real
+  window.open('https://wa.me/' + numero + '?text=' + encodeURIComponent(mensaje), '_blank');
+  document.getElementById('form-success').style.display = 'block';
+  nombre.value = ''; contacto.value = ''; consulta.value = '';
+}
+</script>
+</body>
+</html>
