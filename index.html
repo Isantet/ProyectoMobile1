@@ -594,7 +594,7 @@ function enviarWhatsApp() {
     '📱 *Consulta:* ' + consulta.value.trim();
 
   var numero = '18293715732'; // ← cambia por el número real
-  window.open('https://wa.me/' + numero + '?text=' + encodeURIComponent(mensaje), '_blank');
+ window.location.href = 'https://wa.me/' + numero + '?text=' + encodeURIComponent(mensaje);
   document.getElementById('form-success').style.display = 'block';
   nombre.value = ''; contacto.value = ''; consulta.value = '';
 }
