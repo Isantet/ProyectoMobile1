@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Inicio – HULK CELL</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="icon" type="image/png" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
@@ -61,16 +60,6 @@ footer{background:#080808;border-top:1px solid #1A1A1A}
 .si:hover{background:#4CAF50;color:#000;border-color:#4CAF50}
 .fab-wa{position:fixed;bottom:24px;right:24px;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:#fff;z-index:9999;box-shadow:0 4px 16px rgba(37,211,102,.4);transition:transform .2s;text-decoration:none}
 .fab-wa:hover{transform:scale(1.1)}
-@keyframes pulse-attention {
-  0% { transform: scale(1); box-shadow: 0 4px 16px rgba(37,211,102,0.4); }
-  5% { transform: scale(1.15); box-shadow: 0 0 25px rgba(37,211,102,0.8); }
-  10% { transform: scale(1); box-shadow: 0 4px 16px rgba(37,211,102,0.4); }
-  15% { transform: scale(1.15); box-shadow: 0 0 25px rgba(37,211,102,0.8); }
-  20% { transform: scale(1); box-shadow: 0 4px 16px rgba(37,211,102,0.4); }
-  100% { transform: scale(1); box-shadow: 0 4px 16px rgba(37,211,102,0.4); }
-}
-.fab-wa { animation: pulse-attention 6s infinite ease-in-out; }
-.fab-wa:hover { animation: none; transform: scale(1.1); }
 @media(max-width:640px){.inv-table thead th,.inv-table tbody td{padding:9px 10px;font-size:.77rem}}
 
 .hero-section{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
@@ -89,7 +78,7 @@ footer{background:#080808;border-top:1px solid #1A1A1A}
 </style>
 </head>
 <body>
-<a href="https://wa.me/8092405777" target="_blank" class="fab-wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<a href="https://wa.me/18095550000" target="_blank" class="fab-wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
 <header id="main-header">
   <div class="marquee-wrap">
     <div class="marquee-track text-xs font-semibold text-black">
@@ -126,7 +115,7 @@ footer{background:#080808;border-top:1px solid #1A1A1A}
     </div>
     <div class="flex items-center gap-2 ml-auto lg:ml-0">
       <a href="https://wa.me/18095550000" target="_blank" class="btn-wa hidden sm:flex"><i class="fab fa-whatsapp"></i><span class="hidden lg:inline">WhatsApp</span></a>
-      <a href="https://www.instagram.com/hulkcell24/" target="_blank" class="btn-ig hidden sm:flex"><i class="fab fa-instagram"></i><span class="hidden lg:inline">Instagram</span></a>
+      <a href="https://instagram.com/hulkcell" target="_blank" class="btn-ig hidden sm:flex"><i class="fab fa-instagram"></i><span class="hidden lg:inline">Instagram</span></a>
       <button id="hamburger" class="lg:hidden w-9 h-9 flex items-center justify-center text-gray-400 rounded-lg" style="background:#1A1A1A;border:1px solid #2C2C2C"><i class="fas fa-bars text-sm"></i></button>
     </div>
   </nav>
@@ -146,8 +135,8 @@ footer{background:#080808;border-top:1px solid #1A1A1A}
       <a href="index.html#nosotros" class="py-2 px-3 text-sm text-gray-400 rounded" style="transition:color .2s">Nosotros</a>
       <a href="index.html#contacto" class="py-2 px-3 text-sm text-gray-400 rounded" style="transition:color .2s">Contacto</a>
       <div class="flex gap-2 mt-2">
-        <a href="https://wa.me/8092405777" class="btn-wa flex-1 justify-center"><i class="fab fa-whatsapp"></i>WhatsApp</a>
-        <a href="https://www.instagram.com/hulkcell24/" class="btn-ig flex-1 justify-center"><i class="fab fa-instagram"></i>Instagram</a>
+        <a href="https://wa.me/18095550000" class="btn-wa flex-1 justify-center"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+        <a href="https://instagram.com/hulkcell" class="btn-ig flex-1 justify-center"><i class="fab fa-instagram"></i>Instagram</a>
       </div>
     </div>
   </div>
@@ -477,20 +466,23 @@ footer{background:#080808;border-top:1px solid #1A1A1A}
         </div>
       </div>
       <div data-aos="fade-left">
-        <form style="background:#111;border:1px solid #222;border-radius:16px;padding:32px;box-shadow:0 12px 40px rgba(0,0,0,0.5)">
+        <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="background:#111;border:1px solid #222;border-radius:16px;padding:32px;box-shadow:0 12px 40px rgba(0,0,0,0.5)">
+          <p class="hidden" style="display:none">
+            <label>No llenes este campo si eres humano: <input name="bot-field" /></label>
+          </p>
           <div style="margin-bottom:20px">
             <label style="display:block;color:#9E9E9E;font-size:.75rem;font-weight:600;margin-bottom:8px">Nombre completo</label>
             <input type="text" required placeholder="Ej. Carlos Mendoza" style="width:100%;background:#1A1A1A;border:1px solid #2C2C2C;border-radius:8px;padding:12px 16px;color:#fff;font-size:.85rem;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='#4CAF50'" onblur="this.style.borderColor='#2C2C2C'">
           </div>
           <div style="margin-bottom:20px">
-            <label style="display:block;color:#9E9E9E;font-size:.75rem;font-weight:600;margin-bottom:8px">Correo electronico</label>
+            <label style="display:block;color:#9E9E9E;font-size:.75rem;font-weight:600;margin-bottom:8px">Correo o Teléfono</label>
             <input type="text" required placeholder="Para contactarte" style="width:100%;background:#1A1A1A;border:1px solid #2C2C2C;border-radius:8px;padding:12px 16px;color:#fff;font-size:.85rem;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='#4CAF50'" onblur="this.style.borderColor='#2C2C2C'">
           </div>
           <div style="margin-bottom:24px">
             <label style="display:block;color:#9E9E9E;font-size:.75rem;font-weight:600;margin-bottom:8px">Consulta o Modelo de interés</label>
             <textarea rows="4" required placeholder="Indica el modelo que buscas..." style="width:100%;background:#1A1A1A;border:1px solid #2C2C2C;border-radius:8px;padding:12px 16px;color:#fff;font-size:.85rem;outline:none;resize:vertical;transition:border-color .2s" onfocus="this.style.borderColor='#4CAF50'" onblur="this.style.borderColor='#2C2C2C'"></textarea>
           </div>
-          <button type="button" onclick="alert('¡Mensaje enviado con éxito! Nos comunicaremos pronto.')" style="width:100%;background:#4CAF50;color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:.05em;border:none;border-radius:8px;padding:14px;cursor:pointer;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 25px rgba(76,175,80,0.3)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">ENVIAR MENSAJE</button>
+          <button type="submit" style="width:100%;background:#4CAF50;color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:.05em;border:none;border-radius:8px;padding:14px;cursor:pointer;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 25px rgba(76,175,80,0.3)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">ENVIAR MENSAJE</button>
         </form>
       </div>
     </div>
@@ -507,10 +499,10 @@ footer{background:#080808;border-top:1px solid #1A1A1A}
         </a>
         <p style="color:#555;font-size:.85rem;line-height:1.6;margin-bottom:16px">Tu tienda de tecnología de confianza. Garantía oficial, envíos a todo el país.</p>
         <div class="flex gap-2">
-          <a href="https://www.instagram.com/hulkcell24/" class="si" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://instagram.com/hulkcell" class="si" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           <a href="https://facebook.com/hulkcell" class="si" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="https://tiktok.com/@hulkcell" class="si" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-          <a href="https://wa.me/8092405777" class="si" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://wa.me/18095550000" class="si" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
       <div>
@@ -534,9 +526,9 @@ footer{background:#080808;border-top:1px solid #1A1A1A}
       <div>
         <h5 style="color:#E8E8E8;font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px">Contacto</h5>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:12px">
-          <li style="display:flex;align-items:flex-start;gap:10px"><i class="fas fa-map-marker-alt" style="color:#4CAF50;margin-top:3px;font-size:.8rem"></i><span style="color:#555;font-size:.85rem">C/ A Duarte 123, Santo Domingo, RD</span></li>
-          <li style="display:flex;align-items:center;gap:10px"><i class="fas fa-phone" style="color:#4CAF50;font-size:.8rem"></i><a href="tel:+18092405777" class="fl" style="font-size:.85rem">+1(809)-240-5777</a></li>
-          <li style="display:flex;align-items:center;gap:10px"><i class="fab fa-whatsapp" style="color:#25D366;font-size:.8rem"></i><a href="https://wa.me/809-240-5777" class="fl" style="font-size:.85rem">WhatsApp directo</a></li>
+          <li style="display:flex;align-items:flex-start;gap:10px"><i class="fas fa-map-marker-alt" style="color:#4CAF50;margin-top:3px;font-size:.8rem"></i><span style="color:#555;font-size:.85rem">C/ Duarte 123, Santo Domingo, RD</span></li>
+          <li style="display:flex;align-items:center;gap:10px"><i class="fas fa-phone" style="color:#4CAF50;font-size:.8rem"></i><a href="tel:+18095550000" class="fl" style="font-size:.85rem">+1 (809) 555-0000</a></li>
+          <li style="display:flex;align-items:center;gap:10px"><i class="fab fa-whatsapp" style="color:#25D366;font-size:.8rem"></i><a href="https://wa.me/18095550000" class="fl" style="font-size:.85rem">WhatsApp directo</a></li>
           <li style="display:flex;align-items:center;gap:10px"><i class="fas fa-clock" style="color:#4CAF50;font-size:.8rem"></i><span style="color:#555;font-size:.85rem">Lun–Sáb: 9am–7pm</span></li>
         </ul>
       </div>
