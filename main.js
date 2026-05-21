@@ -1,4 +1,3 @@
-<script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof AOS!=='undefined') AOS.init({duration:550,easing:'ease-out-quad',once:true,offset:60});
   var hdr=document.getElementById('main-header');
@@ -15,5 +14,4 @@ document.addEventListener('DOMContentLoaded',function(){
     var ic=ham.querySelector('i');ic.classList.add('fa-bars');ic.classList.remove('fa-times');
   })});
 });
-</script>
 <script src="search.js"></script>
