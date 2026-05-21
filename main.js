@@ -14,4 +14,3 @@ document.addEventListener('DOMContentLoaded',function(){
     var ic=ham.querySelector('i');ic.classList.add('fa-bars');ic.classList.remove('fa-times');
   })});
 });
-<script src="search.js"></script>
