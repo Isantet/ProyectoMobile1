@@ -1,4 +1,3 @@
-<style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:#0D0D0D;color:#E8E8E8;font-family:'DM Sans',sans-serif;overflow-x:hidden}
@@ -63,4 +62,4 @@ footer{background:#080808;border-top:1px solid #1A1A1A}
 .prod-img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#1A1A1A;border-bottom:1px solid #222;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
 .feature-card{background:#111;border:1px solid #222;border-radius:12px;padding:24px;transition:border-color .2s}
 .feature-card:hover{border-color:rgba(76,175,80,.4)}
-</style>
+
